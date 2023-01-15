@@ -5,5 +5,8 @@ Przed rozpoczęciem pracy w tej aplikacji użytkownik musi zalogować się albo 
 Pole do wprowadzania tekstu umożliwia podstawowe ostylowanie, co jest zrobione za pomocą rozszerzenia flasku - Flask-SimpleMDE. Dostępne są podstawowe opcje: dodanie pogrubienia wybranego słowa, dodanie obrazka z zewnętrznego serwisu, dodanie pochylenia wybranego słowa, dodanie nagłówku. Po opublikowaniu notatki użytkownik może podzielić się notatką (niestety, nie ma możliwości zrobić to od razu po opublikowaniu, user musi się wrócić do ekranu głównego, a potem wybrać potrzebną notatkę). 
 Przyjmowane dane są sanityzowane za pomocą biblioteki bleach.
 Stworzyłam 3 konta podstawowe, dane dla nich znajdują się w pliku passwords. Dla użytkownika 'bob' są stworzone 2 notatki, jedna z nich jest udostępniona innym użytkownikom, druga - nie.
+Aplikacja jest uruchomiana za pomocą poleceń:
+sudo docker-compose build
+sudo docker-compose up
 
 Katsiaryna Kutsepina 317074
