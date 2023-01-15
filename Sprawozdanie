@@ -1,0 +1,9 @@
+Sprawozdanie:
+
+Stworzyłam web aplikację, która umożliwia przechowywanie szyfrowanych notatek. Notatki są szyfrowane za pomocą algorytmu szyfrowania AES(CFB_MODE). 
+Przed rozpoczęciem pracy w tej aplikacji użytkownik musi zalogować się albo się zarejestrować. Zacznę od opisu procesu rejestracji. Użytkownik wprowadza nickname, który musi być pewnej długości oraz hasło, które również musi być pewnej długości oraz jest sprawdzana entropia hasła. W przypadku logowania są sprawdzane dane, wprowadzone w ciągu rejestracji - username oraz hasło. W przypadku niepoprawnie wprowadzonego hasła użytkownik może spróbować jeszcze raz, jednak liczba prób jest ograniczona(=3). Po osiągnięciu tej liczby prób, użytkownik musi poczekać minutę, aż się odblokuje możliwość ponownego wprowadzania hasła. Oprócz tego jest ustawione opóźnienie logowania(=1 sekunda). Hasło jest wysyłane do bazy po zaszyfrowaniu za pomocą sha256.
+Pole do wprowadzania tekstu umożliwia podstawowe ostylowanie, co jest zrobione za pomocą rozszerzenia flasku - Flask-SimpleMDE. Dostępne są podstawowe opcje: dodanie pogrubienia wybranego słowa, dodanie obrazka z zewnętrznego serwisu, dodanie pochylenia wybranego słowa, dodanie nagłówku. Po opublikowaniu notatki użytkownik może podzielić się notatką (niestety, nie ma możliwości zrobić to od razu po opublikowaniu, user musi się wrócić do ekranu głównego, a potem wybrać potrzebną notatkę). 
+Przyjmowane dane są sanityzowane za pomocą biblioteki bleach.
+Stworzyłam 3 konta podstawowe, dane dla nich znajdują się w pliku passwords. Dla użytkownika 'bob' są stworzone 2 notatki, jedna z nich jest udostępniona innym użytkownikom, druga - nie.
+
+Katsiaryna Kutsepina 317074

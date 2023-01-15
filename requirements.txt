@@ -1,0 +1,11 @@
+flask==2.0.2
+flask-login
+Flask-SimpleMDE
+Flask-Markdown
+passlib
+Markdown
+Crypto
+bleach
+datetime
+PyCryptodome
+requests==2.28.1

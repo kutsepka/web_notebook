@@ -1,0 +1,11 @@
+<html>
+<body>
+<h1> Your rendered Markdown: </h1>
+{{ rendered | safe}}
+<br>
+<form action={{ url_for('hello') }}>
+  <input type="submit" value="Go back" />
+  <input type="button" onclick="window.location.href='/share/{{ rendered_id }}';" class="btn btn-warning btn-lg" value="Share"/>
+</form>
+</body>
+</html>
